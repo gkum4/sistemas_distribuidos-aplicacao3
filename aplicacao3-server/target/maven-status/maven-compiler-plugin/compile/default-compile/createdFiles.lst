@@ -1,0 +1,8 @@
+br/com/server/resources/Resource1Resource.class
+br/com/server/utils/ResourceTimeoutManager.class
+br/com/server/models/ClientWaiting.class
+br/com/server/models/Test.class
+br/com/server/utils/ResourceTimeoutManagerDelegate.class
+br/com/server/utils/CORSFilter.class
+br/com/server/Main.class
+br/com/server/resources/Resource2Resource.class
