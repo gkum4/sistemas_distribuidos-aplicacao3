@@ -7,13 +7,11 @@ Sistemas Distribuídos [CSS30-S71]
 ## Funcionamento (Cliente JS)
 - Para regitrar interesse em um recurso:
 ```JavaScript
-const eventSource = EventSource('/resource1'); // ou '/resource2'
+const eventSource = EventSource('/resource1/' + CLIENTID); // ou '/resource2'
 ```
 
-- Para desregistrar interesse ou liberar recurso
-```JavaScript
-eventSource.close();
-```
+- Para desregistrar interesse ou liberar recurso <br/>
+POST `/resource1/deregister/CLIENTID` ou`/resource2/deregister/CLIENTID`
 
 ## Mensagens enviadas pelo servidor (por Server-Sent Events)
 - Cliente adicionado à fila: <br/>
